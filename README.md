@@ -20,7 +20,7 @@ Application multi-agent basée sur **Google Agent Development Kit (ADK)** pour p
 
 ```bash
 git clone <url-du-repo>
-cd google-adk/blogger
+cd ai-agents-blog-writer
 ```
 
 ### 2. Créer et activer un environnement virtuel
@@ -99,7 +99,7 @@ L'interface web sera accessible dans votre navigateur à l'adresse indiquée dan
 ## Structure du projet
 
 ```
-blogger/
+ai-agents-blog-writer/
 ├── agent.py              # Point d'entrée de l'agent ADK
 ├── blogPlannerAgent.py   # Agent de planification de contenu
 ├── blogWriterAgent.py    # Agent de rédaction d'articles
