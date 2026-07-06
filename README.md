@@ -16,11 +16,12 @@ Application multi-agent basée sur **Google Agent Development Kit (ADK)** pour p
 
 ## Prise en main
 
-### 1. Cloner le projet
+### 1. Cloner le projet et changer de branche
 
 ```bash
 git clone <url-du-repo>
-cd google-adk/blogger
+cd ai-agents-blog-writer
+git checkout start
 ```
 
 ### 2. Créer et activer un environnement virtuel
@@ -88,18 +89,10 @@ GOOGLE_API_KEY=AQ.votre_cle_google
 GROQ_API_KEY=votre_cle_groq
 ```
 
-### 6. Lancer l'application
-
-```bash
-adk web
-```
-
-L'interface web sera accessible dans votre navigateur à l'adresse indiquée dans le terminal (généralement `http://localhost:8000` ou `http://127.0.0.1:8000`).
-
 ## Structure du projet
 
 ```
-blogger/
+ai-agents-blog-writer/
 ├── agent.py              # Point d'entrée de l'agent ADK
 ├── blogPlannerAgent.py   # Agent de planification de contenu
 ├── blogWriterAgent.py    # Agent de rédaction d'articles
@@ -118,4 +111,3 @@ blogger/
 
 - **Erreur `ModuleNotFoundError` :** assurez-vous que l'environnement virtuel est activé et que `requirements.txt` a bien été installé.
 - **Erreur de clé API :** vérifiez que les variables `GOOGLE_API_KEY` et `GROQ_API_KEY` sont bien renseignées dans `.env`.
-- **Port déjà utilisé :** lancez `adk web` avec une option de port différent si nécessaire (consultez `adk web --help`).
