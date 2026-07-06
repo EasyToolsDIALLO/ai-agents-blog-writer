@@ -16,6 +16,7 @@ MODEL = LiteLlm(model=os.getenv("MODEL", "groq/llama-3.3-70b-versatile"))
 finalizer = LlmAgent(
     name="Finalizer",
     model=MODEL,
+    description="Formate et enrichit l'article final avec titres alternatifs et hooks de tweet.",
     instruction=f"""
         À partir du brouillon d'article fourni, retourne:
         1) L'article complet inchangé
